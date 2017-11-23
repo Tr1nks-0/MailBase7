@@ -1,0 +1,41 @@
+db: # db properties
+  driver: com.mysql.jdbc.Driver
+  url: jdbc:mysql://localhost:3306/base_v8?useUnicode=yes&characterEncoding=UTF-8&useSSL=false&createDatabaseIfNotExist=true
+  username: root
+  password: root
+#hibernate properties
+hibernate:
+  dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+  show_sql: true
+  format_sql: true
+  hbm2ddl:
+    auto: update
+# mail properties
+spring:
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: baseserverhneu@gmail.com
+    password: mailserver327
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+app:
+  baselink: http://127.0.0.1:8080/
+pdf: #pdf properties
+  font:
+    regular: Liberation Sans.ttf
+    bold: LiberationSans-Bold.ttf
+  gmail:
+    logo: GmailPicture.JPG
+    text: TextGmail.txt
+  office:
+    logo: office-apps.png
+    text: TextOffice.txt
+  imagine:
+    logo: DreamSpark.jpg
+    text: TextMSDN.txt
+
